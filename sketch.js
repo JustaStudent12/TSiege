@@ -161,7 +161,7 @@ function keyPressed(){
   }
 }
 async function getBackgroundImage(){
-   var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+   var response = await fetch("0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17");
    var responseJSON = await response.json();
 
    var datetime = responseJSON.datetime;
