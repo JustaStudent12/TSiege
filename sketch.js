@@ -161,18 +161,8 @@ function keyPressed(){
   }
 }
 async function getBackgroundImage(){
-   var response = await fetch("0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17");
-   var responseJSON = await response.json();
-
-   var datetime = responseJSON.datetime;
-   var hour = datetime.slice(11, 13);
-   //console.log(hour);
-
-   if (hour >= 06 && hour <= 18) {
-     bg = "light.jpg";
-   } else {
+  
      bg = "dark.jpg";
-   }
 
    backgroundImg = loadImage(bg);
    console.log(backgroundImg);
